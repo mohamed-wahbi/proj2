@@ -693,3 +693,6 @@ position: absolute;
   height: 13px !important;
   width: 13px !important;
 }
+.ui-rangeslider .ui-rangeslider-sliders .ui-slider-track{
+        top: 10px !important ;
+}
