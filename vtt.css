@@ -686,4 +686,10 @@ position: absolute;
       background-blend-mode: hard-light !important;
   }
 }
-
+.ui-slider-track {
+  height: 8px !important;
+}
+.ui-slider-track .ui-btn.ui-slider-handle{
+  height: 13px !important;
+  width: 13px !important;
+}
