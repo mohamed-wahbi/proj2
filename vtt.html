@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+    <link rel="stylesheet" href="vtt.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Serif+Pro:wght@600&family=Tapestry&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Source+Serif+Pro:wght@600&family=Tapestry&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&family=Tapestry&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&family=Tapestry&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<style>
+    
+</style>
+</head>
+<body>
+  
+    <nav class="navbar navbar-light bg-light" style="background: white !important;" >
+        <div class="container" style="justify-content: space-evenly ;background: white;">
+          <a class="navbar-brand" href="#">
+            <img src="ll.png" id="iconHeader" alt="" width="30" height="24">
+          </a>
+          <div class="btn-group" style="" role="group" aria-label="Basic outlined example">
+            <button type="button" class="btn btn-outline-success">Livraison</button>
+            <button type="button" class="btn btn-outline-success">click and collect</button>
+            <button type="button" class="btn btn-outline-success">Réservation</button>
+          </div>
+
+          <nav class="navbar navbar-light bg-light" style="width: 469px;">
+            <form class="container-fluid">
+              <div class="input-group">
+                <button type="button" class="btn btn-outline-secondary"> <s><i class="bi bi-geo-alt"></i></s> Tunise</button>
+
+                <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-search" style="cursor:pointer;"></i></span>
+              </div>
+            </form>
+          </nav>
+
+          <a href=""><i class="bi bi-person" style="font-size: 35px;color: #00000061;"></i></a>
+
+
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+      <div  style="background: #f8f9fa;margin-top: 5px;font-size: 17px;padding-left: 25px;margin-bottom: 15px;">
+          <p style="margin-bottom: 0px;height: 49px;padding-top: 12px;">acceuil > liste des restaurants :</p>
+      </div>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="display: none;">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="kfc.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="pizzaImg.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="zinger.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+
+
+
+<div id="content1">
+  <div  style="display: flex;justify-content:center;align-items: center;flex-wrap: wrap;">
+  <img id="kfc" src="kfc.png" style="width: 476px;height: 235px;margin-right: 25px;margin-bottom: 15px;">
+  <img id="pizzaImg" src="pizzaImg.png" style="width: 476px;height: 235px;margin-right: 25px;margin-bottom: 15px;">
+  <img id="zinger" src="zinger.png" style="width: 476px;height: 235px;margin-right: 0px;margin-bottom: 15px;">
+</div>
+ 
+</div>
+<div id="radio" style="justify-content: center;align-items: initial;margin-top: 0;height: 65px;display: flex;">
+  <input type="radio" name="" id="" style="margin-right: 7px;">
+  <input type="radio" name="" id="" style="margin-right: 7px;">
+  <input type="radio" name="" id="" style="margin-right: 7px;">
+  <input type="radio" name="" id="">
+</div> 
+
+
+<div>
+<img id="tas" src="tas.png" style="position: absolute;left: 0;transform: translate(10px, -79px);width: 111px;">
+<img id="tas1" src="tas1.png" style="position: absolute;left: 0px;transform: translate(0px, 395px);width: 145px;" >
+<img id="tas2" src="tas2.png"  style="left: 0;transform: translate(0px, 1105px);width: 100px;position: absolute;">
+<img id="tas3" src="tas3.png" style="position: absolute;right: 0px;width: 130px;transform: translate(10px, -80px);">
+<img id="tas4" src="tas4.png" style="position: absolute;right: 0px;transform: translate(14px, 1020px);width: 120px;">
+
+<div style="width: 25%;float: left;" id="aside">
+<div style="display: grid;justify-content: center;width: 100%;">
+    <p  style="width: 135px;font-size: 18px;font-family: 'Source Serif Pro';margin-top: 20px;margin-left: 0px;" id="list1">Catégorie <span><i id="FRlist1" class="bi bi-chevron-right" style="float: right;"></i><i id="FDlist1" class="bi bi-chevron-down" style="float: right;display: none;"></i></span></p>
+        
+    <ul id="ulList1" style="display:grid ;list-style: none;" >
+      <li style="margin-bottom: 13px;"> <a href="#" style="text-decoration: none;color:black;"><span><img src="fish.jpg" style="width: 20px;height: 20px;border-radius: 50%;"></span> Poisson</a></li>
+      <li style="margin-bottom: 13px;"><a href="#" style="text-decoration: none;color:black;"><span><img src="pixlr-bg-result.png" style="width: 20px;height: 20px;border-radius: 50%;"></span> Poulet</a></li>
+      <li style="margin-bottom: 13px;"><a href="#" style="text-decoration: none;color:black;"><span><img src="pixlr-bg-result (1).png" style="width: 20px;height: 20px;border-radius: 50%;"></span> Burger</a></li>
+      <li><a href="#" style="text-decoration: none;color:black;"><span><img src="pate.jfif" style="width: 20px;height: 20px;border-radius: 50%;"></span> Pates</a></li>
+    
+    </ul>
+    </div>
+
+
+    <div style="display: grid;justify-content: center;width: 100%;margin-top: 55px;    margin-left: 5px;" id="list2">
+        <p id="" style="width: 135px;font-size: 18px;font-family: 'Source Serif Pro';margin-top: 20px;">Promotion <span><i id="FRlist2" class="bi bi-chevron-right" style="float: right;"></i><i id="FDlist2" class="bi bi-chevron-down" style="float: right;display: none;"></i></span></p>
+            
+        <div class="list-group" id="ulList2">
+          <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+            <input class="form-check-input me-1" type="checkbox" value="">
+            10%
+          </label>
+          <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+            <input class="form-check-input me-1" type="checkbox" value="">
+            15% 
+         </label>
+          <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+            <input class="form-check-input me-1" type="checkbox" value="">
+            20%
+          </label>
+          <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+            <input class="form-check-input me-1" type="checkbox" value="">
+            30%
+          </label>
+        </div>
+        </div>
+
+
+
+        <div style="display: grid;justify-content: center;width: 100%;margin-top: 55px;" id="list3">
+            <p  style="width: 135px;font-size: 18px;font-family: 'Source Serif Pro';margin-top: 20px;">Cuisine<span><i id="FRlist3" class="bi bi-chevron-right" style="float: right;"></i><i id="FDlist3" class="bi bi-chevron-down" style="float: right;display: none;"></i></span></p>
+                
+            <div class="list-group" id="ulList3">
+              <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Asiatique
+              </label>
+              <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Italienne
+             </label>
+              <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Francaise
+              </label>
+              <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                <input class="form-check-input me-1" type="checkbox" value="">
+                Américaine
+              </label>
+            </div>
+            </div>
+
+
+            <div style="display: grid;justify-content: center;width: 100%;margin-top: 55px;background: white;" id="list1">
+                <p id="list1p" style="width: 135px;font-size: 18px;font-family: 'Source Serif Pro';margin-top: 20px;">Prix<span><i id="FRlist1" class="bi bi-chevron-right" style="float: right;"></i><i id="FDlist1" class="bi bi-chevron-down" style="float: right;display: none;"></i></span></p>
+                  
+                <div data-role="page" style="width:300px;">
+                  <div data-role="main" class="ui-content">
+                    <form method="post" action="/action_page_post.php">
+                      <div data-role="rangeslider">
+                        <div style="display: flex;justify-content: space-around;align-items: center;">
+                        </div>
+                        <input type="range" name="price-min" id="price-min" value="15" min="0" max="100">
+                        <input type="range" name="price-max" id="price-max" value="70" min="0" max="100">
+                      </div>
+                      </form>
+                  </div>
+                </div> 
+                </div>
+
+
+<div style="display: grid;justify-content: center;width: 100%;margin-top: 15px;background: white;margin-left: 70px;" >
+<p id="" style="width: 135px;font-size: 18px;font-family: 'Source Serif Pro';margin-top: 20px;">Rate<span><i id="FRlist1" class="bi bi-chevron-right" style="float: right;"></i><i id="FDlist1" class="bi bi-chevron-down" style="float: right;display: none;"></i></span></p>
+
+<div class="slidecontainer" style="    display: flex;justify-content: center;align-items: center;">
+    <input type="range" min="1" max="100" value="0" class="slider" id="myRange" style="height: 5px;background: black; width: 245px;margin-right: 25px;"><span><p id="demo" style="font-size: 35px;font-family: 'bootstrap-icons';"></p></span>
+  </div>
+ <div style="display: flex;justify-content: center;align-items: center;">
+   <span>
+    <div style="margin-bottom: 6px;margin-right:15px ;        color: rgb(168 82 131 / 45%);
+    display: none;" id="s1">
+      <span><i class="bi bi-star-fill"  ></i></span>
+      <span><i class="bi bi-star-fill" ></i></span>
+       </div>
+   </span>
+   <span>
+    <div style="margin-bottom: 6px;margin-right:15px ; color: rgb(205, 24, 78); display: none;" id="s2">
+      <span><i class="bi bi-star-fill" ></i></span>
+      <span><i class="bi bi-star-fill"  ></i></span>
+      <span><i class="bi bi-star-fill" ></i></span>
+       </div>
+   </span>
+   <span>
+    <div style="margin-bottom: 6px;margin-right:15px ;     color: rgb(241 182 20);display:none ;" id="s3">
+      <span><i class="bi bi-star-fill"  ></i></span>
+      <span><i class="bi bi-star-fill"  ></i></span>
+      <span><i class="bi bi-star-fill"  ></i></span>
+      <span><i class="bi bi-star-fill"  ></i></span>
+       </div>
+   </span>
+   <div style="margin-bottom: 6px;margin-right:15px ; color: rgb(246, 255, 0);display:none ;" id="s4">
+    <span><i class="bi bi-star-fill"  ></i></span>
+    <span><i class="bi bi-star-fill"  ></i></span>
+    <span><i class="bi bi-star-fill"  ></i></span>
+    <span><i class="bi bi-star-fill"  ></i></span>
+    <span><i class="bi bi-star-fill"  ></i></span>
+
+     </div>
+ </span>
+
+ </div>
+
+
+
+</div>
+</div>
+                    
+    </div>                            
+                  
+       
+    <div id="navBar1" style="display: none;justify-content: center;" >
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Catégorie
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li style="margin-bottom: 13px;"> <a href="#" style="text-decoration: none;color:black;"><span><img src="fish.jpg" style="width: 20px;height: 20px;border-radius: 50%;"></span> Poisson</a></li>
+                        <li style="margin-bottom: 13px;"><a href="#" style="text-decoration: none;color:black;"><span><img src="pixlr-bg-result.png" style="width: 20px;height: 20px;border-radius: 50%;"></span> Poulet</a></li>
+                        <li style="margin-bottom: 13px;"><a href="#" style="text-decoration: none;color:black;"><span><img src="pixlr-bg-result (1).png" style="width: 20px;height: 20px;border-radius: 50%;"></span> Burger</a></li>
+                        <li><a href="#" style="text-decoration: none;color:black;"><span><img src="pate.jfif" style="width: 20px;height: 20px;border-radius: 50%;"></span> Pates</a></li>
+                    </ul>
+                  </li>
+                
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Promotions
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="list-group" id="ulList2">
+                            <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                              <input class="form-check-input me-1" type="checkbox" value="">
+                              10%
+                            </label>
+                            <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                              <input class="form-check-input me-1" type="checkbox" value="">
+                              15% 
+                           </label>
+                            <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                              <input class="form-check-input me-1" type="checkbox" value="">
+                              20%
+                            </label>
+                            <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                              <input class="form-check-input me-1" type="checkbox" value="">
+                              30%
+                            </label>
+                          </div>
+                    </ul>
+                  </li>
+
+
+
+                
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Cuisine
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="list-group" id="ulList3">
+                            <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                              <input class="form-check-input me-1" type="checkbox" value="">
+                              Asiatique
+                            </label>
+                            <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                              <input class="form-check-input me-1" type="checkbox" value="">
+                              Italienne
+                           </label>
+                            <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                              <input class="form-check-input me-1" type="checkbox" value="">
+                              Francaise
+                            </label>
+                            <label class="list-group-item" style="margin-bottom: 10px;border: none;">
+                              <input class="form-check-input me-1" type="checkbox" value="">
+                              Américaine
+                            </label>
+                          </div>
+                    </ul>
+                  </li>
+
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Prix
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="">
+                        
+            <div style="display: grid;justify-content: center;width: 75%;margin-top: 0px;background: red;" id="list1">
+               <div data-role="main" style="width:300px;">
+                  <div data-role="main" class="ui-content">
+                    <form method="post" action="/action_page_post.php">
+                      <div data-role="rangeslider">
+                        <div style="display: flex;justify-content: space-around;align-items: center;">
+                        </div>
+                   <span style="color:white ;">Min-prix</span>     <input type="range" name="price-min" id="price-min" value="15" min="0" max="100"><br>
+                   <span style="color: white;">Max-prix</span>        <input type="range" name="price-max" id="price-max" value="70" min="0" max="100">
+                      </div>
+                      </form>
+                  </div>
+                </div> 
+                </div>
+                    </ul>
+                  </li>
+
+
+
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Rate
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <div class="slidecontainer" style="display: flex;justify-content: center;align-items: center;">
+                            <input type="range" min="1" max="100" value="0" class="slider" id="myRange" style="height: 5px;background: black; width: 245px;margin-right: 25px;"><span><p id="demo" style="font-size: 35px;font-family: 'bootstrap-icons';"></p></span>
+                          </div>
+                         <div style="display: flex;justify-content: center;align-items: center;">
+                           <span>
+                            <div style="margin-bottom: 6px;margin-right:15px ;        color: rgb(168 82 131 / 45%);
+                            display: none;" id="s1">
+                              <span><i class="bi bi-star-fill"  ></i></span>
+                              <span><i class="bi bi-star-fill" ></i></span>
+                               </div>
+                           </span>
+                           <span>
+                            <div style="margin-bottom: 6px;margin-right:15px ; color: rgb(205, 24, 78); display: none;" id="s2">
+                              <span><i class="bi bi-star-fill" ></i></span>
+                              <span><i class="bi bi-star-fill"  ></i></span>
+                              <span><i class="bi bi-star-fill" ></i></span>
+                               </div>
+                           </span>
+                           <span>
+                            <div style="margin-bottom: 6px;margin-right:15px ;     color: rgb(241 182 20);display:none ;" id="s3">
+                              <span><i class="bi bi-star-fill"  ></i></span>
+                              <span><i class="bi bi-star-fill"  ></i></span>
+                              <span><i class="bi bi-star-fill"  ></i></span>
+                              <span><i class="bi bi-star-fill"  ></i></span>
+                               </div>
+                           </span>
+                           <div style="margin-bottom: 6px;margin-right:15px ; color: rgb(246, 255, 0);display:none ;" id="s4">
+                            <span><i class="bi bi-star-fill"  ></i></span>
+                            <span><i class="bi bi-star-fill"  ></i></span>
+                            <span><i class="bi bi-star-fill"  ></i></span>
+                            <span><i class="bi bi-star-fill"  ></i></span>
+                            <span><i class="bi bi-star-fill"  ></i></span>
+                        
+                             </div>
+                         </span>
+                        
+                         </div>
+                        
+                        
+                        
+                        </div>
+                        </div>
+                    </ul>
+                  </li>
+
+              </div>
+            </div>
+          </nav>
+
+
+    </div>
+
+
+
+
+
+
+    <div>
+
+
+
+        <main id="main1" style="width: 100%;">
+        
+        <div id="title0" style="display: flex;justify-content: center;align-items: center;">
+           <div style="display: flex;width: 865px;justify-content: space-between;">
+            <h3 style="font-size: 20px;font-family: emoji;margin-left: 10px;margin-top: 10px;">Restauts populaires</h3>
+            <p style="width: 170px;margin-top: 10px;"><span>voir tous (10)</span><i class="bi bi-arrow-left-square" style="cursor:pointer ;font-size: 25px;margin-right: 5px;margin-left: 5px;"></i></span>
+              <span><i class="bi bi-arrow-right-square"style="cursor:pointer;    font-size: 25px;"></i></span></p>
+          </div> 
+        </div>
+          
+          
+          
+          <div id="platsCards" style="padding-bottom: 15px;display: flex;flex-flow: wrap;justify-content: center;align-items: center;">
+          
+                <div class="card-food" style="display:inline-flex;margin-top: 0px;background: #f6f6f6;margin-right: 25px;">
+                  
+                  <div class="card-food1" style="width:auto;margin-top: 10px;    " >
+                  
+                    <div class="card-food1-img1" style="display: flex;justify-content: center;">
+                      <img src="the big dip.jpg" alt="" style="width: 272px;margin-left: 0px;" id="birgar1">
+                      <div class="remises1" style="position: absolute;margin-top: 20px;margin-left: 0px;margin-bottom: 10px;width: 264px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-20%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        5 plats</span>
+                      </div>
+                      <div class="remises2" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 54px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-15%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        3 plats</span>
+                      </div> 
+                      <div class="remises3" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 89px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-10%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        2 plats</span>
+                      </div> 
+                  <div style="position: absolute;margin-top: 155px;margin-left: 185px;"><i class="bi bi-share" id="share1" style="cursor: pointer;"></i><i class="bi bi-heart" id="Heart1" style="cursor: pointer;"></i></div>    
+                  
+                    </div> 
+                     <div class="header-card-food1">
+                     <h3 style="padding-left: 15px;color: #404c65;padding-top: 10px;font-size: 23px;font-family: cursive;">The BIG DIP</h3>
+                     </div>
+                     <div class="header-card-main" style="margin-left: 15px;font-weight: bold;font-size: 15px;color: #8080806b;">
+                     <p>La spécialité du réstaurant</p>
+                        <div style="margin-bottom: 6px">
+                       <span><i class="bi bi-star-fill" id="S11" onclick="s11()"></i></span>
+                       <span><i class="bi bi-star-fill" id="S21" onclick="s21()"></i></span>
+                       <span><i class="bi bi-star-fill" id="S31" onclick="s31() "></i></span>
+                       <span><i class="bi bi-star-fill" id="S41" onclick="s41()"></i></span>
+                       <span><i class="bi bi-star-fill" id="S51" onclick="s51()"></i></span>
+                        </div>
+                      
+                     
+                     <p><span><i class="bi bi-clock-fill"></i></span> 08:30-23:30
+                    <a href="#" style="text-decoration:none;"><span style="margin-left: 7px;"><i class="bi bi-geo-alt-fill"></i></span> lac2</a>
+                    <span  style="margin-left: 7px;"><i class="bi bi-heart" style="cursor: pointer;"  id="Heart_1"></i></span> <b style="cursor: pointer;" id="text">45</b> 
+                    </p>
+              </div> 
+                 </div>
+                  </div>
+              
+                  
+              
+                <div class="card-food" style="display:inline-flex;margin-top: 0px;background: #f6f6f6; margin-right: 25px;">
+                  <div class="card-food1" style="width: auto;margin-top: 10px;   " >
+                  
+                    <div class="card-food1-img1" style="display: flex;justify-content: center;">
+                      <img src="aquatic.jpg" alt=""  style="width: 272px;margin-left: 0px;height: 175px;"   >
+                      <div class="remises1" style="position: absolute;margin-top: 20px;margin-left: 0px;margin-bottom: 10px;width: 264px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-20%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        5 plats</span>
+                      </div>
+                      <div class="remises2" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 54px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-15%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        3 plats</span>
+                      </div> 
+                      <div class="remises3" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 89px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-10%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        2 plats</span>
+                      </div> 
+                  <div style="position: absolute;margin-top: 155px;margin-left: 185px;"><i class="bi bi-share" id="share2" style="cursor: pointer;"></i><i class="bi bi-heart" id="Heart2"style="cursor: pointer;"></i></div>    
+                  
+                    </div> 
+                     <div class="header-card-food1">
+                     <h3  style="padding-left: 15px;color: #404c65;padding-top: 10px;font-size: 23px;font-family: cursive;">AQUATIC</h3>
+                     </div>
+                     <div class="header-card-main" style="margin-left: 15px;font-weight: bold;font-size: 15px;color: #8080806b;">
+                     <p>La spécialité du réstaurant</p>
+                     
+                     <div style="margin-bottom: 6px">
+                      <span><i class="bi bi-star-fill" id="S12" onclick="s12()"></i></span>
+                      <span><i class="bi bi-star-fill" id="S22" onclick="s22()"></i></span>
+                      <span><i class="bi bi-star-fill" id="S32" onclick="s32()"></i></span>
+                      <span><i class="bi bi-star-fill" id="S42" onclick="s42()"></i></span>
+                      <span><i class="bi bi-star-fill" id="S52" onclick="s52()"></i></span>
+                       </div>
+              
+              
+              
+              
+                     <p><span><i class="bi bi-clock-fill"></i></span> 08:30-23:30
+                    <a href="#" style="text-decoration:none;"><span style="margin-left: 7px;"><i class="bi bi-geo-alt-fill"></i></span> lac</a>
+                    <span style="margin-left: 7px;cursor: pointer;" id="Heart_2" ><i class="bi bi-heart"></i></span><b id="text2" style="cursor: pointer;">45</b> 
+                    </p>
+              </div> 
+                 </div>
+                  </div>
+              
+              
+                  <div class="card-food" id="turq" style="display:inline-flex;margin-top: 0px;background: #f6f6f6;">
+                    <div class="card-food1" style="width: 273px;margin-top: 10px;" >
+                    
+                      <div class="card-food1-img1" style="display: flex;justify-content: center;">
+                        <img src="turquoise.jpg" alt="" style="width: 272px;margin-left: 0px;">
+                        <div class="remises1" style="position: absolute;margin-top: 20px;margin-left: 0px;margin-bottom: 10px;width: 264px;" >
+                          <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-20%</span>
+                         <span style="background-color: #407E5C;width: 55%;
+                         display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                          5 plats</span>
+                        </div>
+                        <div class="remises2" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 54px;" >
+                          <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-15%</span>
+                         <span style="background-color: #407E5C;width: 55%;
+                         display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                          3 plats</span>
+                        </div> 
+                        <div class="remises3" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 89px;" >
+                          <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-10%</span>
+                         <span style="background-color: #407E5C;width: 55%;
+                         display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                          2 plats</span>
+                        </div> 
+
+                      
+                    <div style="position: absolute;margin-top: 155px;margin-left: 185px;" id="turqoise"><i class="bi bi-share" style="cursor: pointer;" id="share3"></i><i  style="cursor:pointer;" class="bi bi-heart" id="Heart3"></i></div>    
+                    
+                      </div> 
+                       <div  class="header-card-food1">
+                       <h3  style="padding-left: 15px;color: #404c65;padding-top: 10px;font-size: 23px;font-family: cursive;">turquoise</h3>
+                       </div>
+                       <div class="header-card-main" style="margin-left: 15px;font-weight: bold;font-size: 15px;color: #8080806b;">
+                       <p>La spécialité du réstaurant</p>
+                    
+                       <div style="margin-bottom: 6px">
+                        <span><i class="bi bi-star-fill" onclick="s13 ()" id="S13"></i></span>
+                        <span><i class="bi bi-star-fill" onclick="s23 ()" id="S23"></i></span>
+                        <span><i class="bi bi-star-fill" onclick="s33 ()" id="S33"></i></span>
+                        <span><i class="bi bi-star-fill" onclick="s43 ()" id="S43"></i></span>
+                        <span><i class="bi bi-star-fill" onclick="s53()" id="S53"></i></span>
+                         </div>
+              
+              
+              
+              
+                       <p><span><i class="bi bi-clock-fill"></i></span> 08:30-23:30
+                      <a href="#" style="text-decoration:none;"><span style="margin-left: 7px;"><i class="bi bi-geo-alt-fill"></i></span> lac</a>
+                      <span style="margin-left: 7px;"><i class="bi bi-heart" id="Heart_3" style="cursor: pointer;"></i></span> <b style="cursor: pointer;" id="text3">45</b> 
+                      </p>
+                </div> 
+                   </div>
+                   </div>
+              </div>
+            </div>
+            
+          
+          
+                
+            <div id="platsCards" style="padding-bottom: 15px;display: flex;flex-flow: wrap;justify-content: center;align-items: center;">
+        
+              <div class="card-food" style="display:inline-flex;margin-top: 0px;background: #f6f6f6;margin-right: 25px;">
+                
+                <div class="card-food1" style="width:auto;margin-top: 10px;    " >
+                
+                  <div class="card-food1-img1" style="display: flex;justify-content: center;">
+                    <img src="lemdina.png" alt="" style="width: 272px;margin-left: 0px;" id="birgar1">
+                    <div class="remises1" style="position: absolute;margin-top: 20px;margin-left: 0px;margin-bottom: 10px;width: 264px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-20%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      5 plats</span>
+                    </div>
+                    <div class="remises2" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 54px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-15%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      3 plats</span>
+                    </div> 
+                    <div class="remises3" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 89px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-10%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      2 plats</span>
+                    </div> 
+                <div style="position: absolute;margin-top: 155px;margin-left: 185px;"><i class="bi bi-share" id="share1" style="cursor: pointer;"></i><i class="bi bi-heart" id="Heart1" style="cursor: pointer;"></i></div>    
+                
+                  </div> 
+                   <div class="header-card-food1">
+                   <h3  style="padding-left: 15px;color: #404c65;padding-top: 10px;font-size: 23px;font-family: cursive;">LEMDINA لمدينة</h3>
+                   </div>
+                   <div class="header-card-main" style="margin-left: 15px;font-weight: bold;font-size: 15px;color: #8080806b;">
+                   <p>La spécialité du réstaurant</p>
+                      <div style="margin-bottom: 6px">
+                     <span><i class="bi bi-star-fill" id="S11" onclick="s11()"></i></span>
+                     <span><i class="bi bi-star-fill" id="S21" onclick="s21()"></i></span>
+                     <span><i class="bi bi-star-fill" id="S31" onclick="s31() "></i></span>
+                     <span><i class="bi bi-star-fill" id="S41" onclick="s41()"></i></span>
+                     <span><i class="bi bi-star-fill" id="S51" onclick="s51()"></i></span>
+                      </div>
+                    
+                   
+                   <p><span><i class="bi bi-clock-fill"></i></span> 08:30-23:30
+                  <a href="#" style="text-decoration:none;"><span style="margin-left: 7px;"><i class="bi bi-geo-alt-fill"></i></span> lac</a>
+                  <span  style="margin-left: 7px;"><i class="bi bi-heart" style="cursor: pointer;"  id="Heart_1"></i></span> <b style="cursor: pointer;" id="text">45</b> 
+                  </p>
+            </div> 
+               </div>
+                </div>
+            
+                
+            
+              <div class="card-food" style="display:inline-flex;margin-top: 0px;background: #f6f6f6; margin-right: 25px;">
+                <div class="card-food1" style="width: auto;margin-top: 10px;   " >
+                
+                  <div class="card-food1-img1" style="display: flex;justify-content: center;">
+                    <img src="butterfly.png" alt=""  style="width: 272px;margin-left: 0px;height: 175px;"   >
+                    <div class="remises1" style="position: absolute;margin-top: 20px;margin-left: 0px;margin-bottom: 10px;width: 264px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-20%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      5 plats</span>
+                    </div>
+                    <div class="remises2" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 54px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-15%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      3 plats</span>
+                    </div> 
+                    <div class="remises3" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 89px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-10%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      2 plats</span>
+                    </div> 
+                <div style="position: absolute;margin-top: 155px;margin-left: 185px;"><i class="bi bi-share" id="share2" style="cursor: pointer;"></i><i class="bi bi-heart" id="Heart2"style="cursor: pointer;"></i></div>    
+                
+                  </div> 
+                   <div class="header-card-food1">
+                   <h3  style="padding-left: 15px;color: #404c65;padding-top: 10px;font-size: 23px;font-family: cursive;">BUTTERFLY</h3>
+                   </div>
+                   <div class="header-card-main" style="margin-left: 15px;font-weight: bold;font-size: 15px;color: #8080806b;">
+                   <p>La spécialité du réstaurant</p>
+                   
+                   <div style="margin-bottom: 6px">
+                    <span><i class="bi bi-star-fill" id="S12" onclick="s12()"></i></span>
+                    <span><i class="bi bi-star-fill" id="S22" onclick="s22()"></i></span>
+                    <span><i class="bi bi-star-fill" id="S32" onclick="s32()"></i></span>
+                    <span><i class="bi bi-star-fill" id="S42" onclick="s42()"></i></span>
+                    <span><i class="bi bi-star-fill" id="S52" onclick="s52()"></i></span>
+                     </div>
+            
+            
+            
+            
+                   <p><span><i class="bi bi-clock-fill"></i></span> 08:30-23:30
+                  <a href="#" style="text-decoration:none;"><span style="margin-left: 7px;"><i class="bi bi-geo-alt-fill"></i></span> manzah6</a>
+                  <span style="margin-left: 7px;cursor: pointer;" id="Heart_2" ><i class="bi bi-heart"></i></span><b id="text2" style="cursor: pointer;">45</b> 
+                  </p>
+            </div> 
+               </div>
+                </div>
+            
+            
+                <div id="rus" class="card-food" style="display:inline-flex;margin-top: 0px;background: #f6f6f6;">
+                  <div class="card-food1" style="width: 273px;margin-top: 10px;" >
+                  
+                    <div class="card-food1-img1" style="display: flex;justify-content: center;">
+                      <img src="rustica.png" alt="" style="width: 272px;margin-left: 0px;">
+                      <div class="remises1" style="position: absolute;margin-top: 20px;margin-left: 0px;margin-bottom: 10px;width: 264px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-20%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        5 plats</span>
+                      </div>
+                      <div class="remises2" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 54px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-15%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        3 plats</span>
+                      </div> 
+                      <div class="remises3" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 89px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-10%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        2 plats</span>
+                      </div> 
+                  <div style="position: absolute;margin-top: 155px;margin-left: 185px;"><i class="bi bi-share" style="cursor: pointer;" id="share3"></i><i  style="cursor:pointer;" class="bi bi-heart" id="Heart3"></i></div>    
+                  
+                    </div> 
+                     <div class="header-card-food1">
+                     <h3  style="padding-left: 15px;color: #404c65;padding-top: 10px;font-size: 23px;font-family: cursive;">RUSTICA </h3>
+                     </div>
+                     <div class="header-card-main" style="margin-left: 15px;font-weight: bold;font-size: 15px;color: #8080806b;">
+                     <p>La spécialité du réstaurant</p>
+                  
+                     <div style="margin-bottom: 6px">
+                      <span><i class="bi bi-star-fill" onclick="s13 ()" id="S13"></i></span>
+                      <span><i class="bi bi-star-fill" onclick="s23 ()" id="S23"></i></span>
+                      <span><i class="bi bi-star-fill" onclick="s33 ()" id="S33"></i></span>
+                      <span><i class="bi bi-star-fill" onclick="s43 ()" id="S43"></i></span>
+                      <span><i class="bi bi-star-fill" onclick="s53()" id="S53"></i></span>
+                       </div>
+            
+            
+            
+            
+                     <p><span><i class="bi bi-clock-fill"></i></span> 08:30-23:30
+                    <a href="#" style="text-decoration:none;"><span style="margin-left: 7px;"><i class="bi bi-geo-alt-fill"></i></span> manzah</a>
+                    <span style="margin-left: 7px;"><i class="bi bi-heart" id="Heart_3" style="cursor: pointer;"></i></span> <b style="cursor: pointer;" id="text3">45</b> 
+                    </p>
+              </div> 
+                 </div>
+                 </div>
+              </div>
+          
+          <div id="title1" style="display: flex;justify-content: center;align-items: center;">
+             <div style="display: flex;width: 865px;justify-content: space-between;">
+                <h3 style="font-size: 20px;font-family: emoji; margin-left: 10px;margin-top: 10px;width: 36%;">Restaurants pres de chez vous</h3>
+                <p style="width: 170px;margin-top: 10px;">
+                  <span>voir tous (10)</span><i class="bi bi-arrow-left-square" style="cursor: pointer;font-size: 25px;margin-right: 5px;margin-left: 5px;"></i>
+                </span><span><i class="bi bi-arrow-right-square" style="font-size: 25px;cursor: pointer;"></i></span></p>
+              </div> 
+          </div>
+              
+          
+              
+            <div id="platsCards" style="padding-bottom: 55px;display: flex;flex-flow: wrap;justify-content: center;align-items: center;">
+          
+              <div class="card-food" style="display:inline-flex;margin-top: 0px;background: #f6f6f6;    margin-right: 25px;">
+                
+                <div class="card-food1" style="width:auto;margin-top: 10px;" >
+                
+                  <div class="card-food1-img1" style="display: flex;justify-content: center;">
+                    <img src="the716.png" alt="" style="width: 272px;margin-left: 0px;" id="birgar1">
+                    <div class="remises1" style="position: absolute;margin-top: 20px;margin-left: 0px;margin-bottom: 10px;width: 264px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-20%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      5 plats</span>
+                    </div>
+                    <div class="remises2" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 54px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-15%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      3 plats</span>
+                    </div> 
+                    <div class="remises3" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 89px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-10%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      2 plats</span>
+                    </div> 
+                <div style="position: absolute;margin-top: 155px;margin-left: 185px;"><i class="bi bi-share" id="share1" style="cursor: pointer;"></i><i class="bi bi-heart" id="Heart1" style="cursor: pointer;"></i></div>    
+                
+                  </div> 
+                   <div class="header-card-food1">
+                   <h3 style="padding-left: 15px;color: #404c65;padding-top: 10px;font-size: 23px;font-family: cursive;">THE 716</h3>
+                   </div>
+                   <div class="header-card-main" style="margin-left: 15px;font-weight: bold;font-size: 15px;color: #8080806b;">
+                   <p>La spécialité du réstaurant</p>
+                      <div style="margin-bottom: 6px">
+                     <span><i class="bi bi-star-fill" id="S11" onclick="s11()"></i></span>
+                     <span><i class="bi bi-star-fill" id="S21" onclick="s21()"></i></span>
+                     <span><i class="bi bi-star-fill" id="S31" onclick="s31() "></i></span>
+                     <span><i class="bi bi-star-fill" id="S41" onclick="s41()"></i></span>
+                     <span><i class="bi bi-star-fill" id="S51" onclick="s51()"></i></span>
+                      </div>
+                    
+                   
+                   <p><span><i class="bi bi-clock-fill"></i></span> 08:30-23:30
+                  <a href="#" style="text-decoration:none;"><span style="margin-left: 7px;"><i class="bi bi-geo-alt-fill"></i></span> manzah6</a>
+                  <span  style="margin-left: 7px;"><i class="bi bi-heart" style="cursor: pointer;"  id="Heart_1"></i></span> <b style="cursor: pointer;" id="text">45</b> 
+                  </p>
+            </div> 
+               </div>
+                </div>
+            
+                
+            
+              <div class="card-food" style="display:inline-flex;margin-top: 0px;background: #f6f6f6;    margin-right: 25px;">
+                <div class="card-food1" style="width: auto;margin-top: 10px;" >
+                
+                  <div class="card-food1-img1" style="display: flex;justify-content: center;">
+                    <img src="the golf.png" alt=""  style="width: 272px;margin-left: 0px;height: 175px;"   >
+                    <div class="remises1" style="position: absolute;margin-top: 20px;margin-left: 0px;margin-bottom: 10px;width: 264px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-20%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      5 plats</span>
+                    </div>
+                    <div class="remises2" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 54px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-15%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      3 plats</span>
+                    </div> 
+                    <div class="remises3" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 89px;" >
+                      <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-10%</span>
+                     <span style="background-color: #407E5C;width: 55%;
+                     display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                      2 plats</span>
+                    </div> 
+                <div style="position: absolute;margin-top: 155px;margin-left: 185px;"><i class="bi bi-share" id="share2" style="cursor: pointer;"></i><i class="bi bi-heart" id="Heart2"style="cursor: pointer;"></i></div>    
+                
+                  </div> 
+                   <div class="header-card-food1">
+                   <h3 style="padding-left: 15px;color: #404c65;padding-top: 10px;font-size: 23px;font-family: cursive;">LE GOLF</h3>
+                   </div>
+                   <div class="header-card-main" style="margin-left: 15px;font-weight: bold;font-size: 15px;color: #8080806b;">
+                   <p>La spécialité du réstaurant</p>
+                   
+                   <div style="margin-bottom: 6px">
+                    <span><i class="bi bi-star-fill" id="S12" onclick="s12()"></i></span>
+                    <span><i class="bi bi-star-fill" id="S22" onclick="s22()"></i></span>
+                    <span><i class="bi bi-star-fill" id="S32" onclick="s32()"></i></span>
+                    <span><i class="bi bi-star-fill" id="S42" onclick="s42()"></i></span>
+                    <span><i class="bi bi-star-fill" id="S52" onclick="s52()"></i></span>
+                     </div>
+            
+            
+            
+            
+                   <p><span><i class="bi bi-clock-fill"></i></span> 08:30-23:30
+                  <a href="#" style="text-decoration:none;"><span style="margin-left: 7px;"><i class="bi bi-geo-alt-fill"></i></span> LA MARSA</a>
+                  <span style="margin-left: 7px;cursor: pointer;" id="Heart_2" ><i class="bi bi-heart"></i></span><b id="text2" style="cursor: pointer;">45</b> 
+                  </p>
+            </div> 
+               </div>
+                </div>
+            
+            
+                <div id="DZ" class="card-food" style="display:inline-flex;margin-top: 0px;background: #f6f6f6;    margin-right: 0px;">
+                  <div class="card-food1" style="width: 273px;margin-top: 10px;" >
+                  
+                    <div class="card-food1-img1" style="display: flex;justify-content: center;">
+                      <img src="dar zarrouk.png" alt="" style="width: 272px;margin-left: 0px;">
+                      <div class="remises1" style="position: absolute;margin-top: 20px;margin-left: 0px;margin-bottom: 10px;width: 264px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-20%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        5 plats</span>
+                      </div>
+                      <div class="remises2" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 54px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-15%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        3 plats</span>
+                      </div> 
+                      <div class="remises3" style="position: absolute;margin-left: 0px;margin-bottom: 10px;width: 264px;margin-top: 89px;" >
+                        <span style="position: absolute;display: inline;background: #f1b727;width: 29%;border-top-right-radius: 50px;border-bottom-right-radius: 50px;padding-left: 15px;color: white;">-10%</span>
+                       <span style="background-color: #407E5C;width: 55%;
+                       display: block;border-top-right-radius: 5px;border-bottom-right-radius:5px;text-align: end;padding-right: 15px;color: white;">
+                        2 plats</span>
+                      </div> 
+                  <div style="position: absolute;margin-top: 155px;margin-left: 185px;"><i class="bi bi-share" style="cursor: pointer;" id="share3"></i><i  style="cursor:pointer;" class="bi bi-heart" id="Heart3"></i></div>    
+                  
+                    </div> 
+                     <div class="header-card-food1">
+                     <h3 style="padding-left: 15px;color: #404c65;padding-top: 10px;font-size: 23px;font-family: cursive;">DAR ZAROUK</h3>
+                     </div>
+                     <div class="header-card-main" style="margin-left: 15px;font-weight: bold;font-size: 15px;color: #8080806b;">
+                     <p>La spécialité du réstaurant</p>
+                  
+                     <div style="margin-bottom: 6px">
+                      <span><i class="bi bi-star-fill" onclick="s13 ()" id="S13"></i></span>
+                      <span><i class="bi bi-star-fill" onclick="s23 ()" id="S23"></i></span>
+                      <span><i class="bi bi-star-fill" onclick="s33 ()" id="S33"></i></span>
+                      <span><i class="bi bi-star-fill" onclick="s43 ()" id="S43"></i></span>
+                      <span><i class="bi bi-star-fill" onclick="s53()" id="S53"></i></span>
+                       </div>
+            
+            
+            
+            
+                     <p><span><i class="bi bi-clock-fill"></i></span> 08:30-23:30
+                    <a href="#" style="text-decoration:none;font-size: 11px;"><span style="margin-left: 7px;"><i class="bi bi-geo-alt-fill"></i></span> sidi bou side</a>
+                    <span style="margin-left: 7px;"><i class="bi bi-heart" id="Heart_3" style="cursor: pointer;"></i></span> <b style="cursor: pointer;" id="text3">45</b> 
+                    </p>
+              </div> 
+                 </div>
+                 </div>
+              </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+             
+        </main>
+        
+        
+        
+        </div>
+
+
+
+
+
+    <div id="back_footer" style="background-color: #202d47d6; width: 100%;height: auto;margin-top: 28px;">
+        <div style="display: flex;justify-content: center;align-items: center;"><a style="margin-top: 10px;" href=""><img src="Rectangle 162.png" alt=""></a> 
+      
+        </div>
+        <div style="display: flex;justify-content: center;align-items: center;color: white;"><h2>Newsletter</h2></div> 
+        <div style="display: flex;justify-content: center;align-items: center;color:white;"><p>Abonnez-vous à notre newsletter</p></div> 
+        <div style="display: flex;justify-content: center;align-items: center;color:white;">
+        <input type="email" style="background: none;border: 1px solid yellow ;color: white;outline: none;border-top-left-radius: 5px ;
+        border-bottom-left-radius: 5px ;width: 410px;height: 40px;" placeholder="Entrez votre Email">
+        <span style=" background-color: yellow;border: 2px solid yellow;margin-left: 0px;border-top-right-radius: 5px ;
+        border-bottom-right-radius: 5px ;height: 40px;"><a href="#" style="text-decoration: none;color: white;"><img src="Groupe 41293.png" style="height: 100%;width: 100%;" alt=""></a></span></div> 
+      
+      <div id="inligne" style="height: 195px;width: 100%;display: flex;justify-content: center;align-items: center;">
+        <span id="a"  style="width: 350px;display: inline-block;height: 190px;margin-right: 103px;">
+        <div>
+          <img src="farkito rvb-07 .png" style="margin: 10px;" alt="">
+          <p style="color: white;font-family: emoji;">Farkito se lancera prochainement sue le marché de la restauration avec la lolonté de bousculer ce secteur qui doit etre modernisé .</p>
+        </div>
+        
+        </span>
+        <span id="b"  style="width: 248px;display: inline-block;height: 190px;margin-right: 0px;">
+          <div id="b1" style="width: 80%;position: relative;left: 30px;top: 80px;font-size: 16px;font-family: emoji;">
+           <div><a href="#" style="text-decoration: none;color: white;" >Livraison <span><i class="bi bi-truck"></i></span></a></div>
+          <div><a href="#" style="text-decoration: none;color: white;">Clic and collect <span><i class="bi bi-cart-plus"></i></span></a></div>
+          <div><a href="#" style="text-decoration: none;color: white;">Réservation <span><i class="bi bi-calendar2-date heading"></i></span></a></div>  
+          </div>
+         
+        </span>
+        <span id="c"  style="width: 220px;display: inline-block;height: 190px;margin-right: 40px;">
+          <div style="width: 80%;position: relative;left: 0px;top: 79px;font-size: 16px;font-family: emoji;font-weight: bolder;">
+            <div><a href="tel:216 71 45 23 26" style="text-decoration: none;color: white;" >+216 71 45 23 26 <span><i class="bi bi-telephone-plus"></i></span></a></div>
+           <div><a href="mailto:Farkito@gmail.com" style="text-decoration: none;color: white;">Farkito@gmail.com <span><i class="bi bi-envelope"></i></span></a></div>
+           <div><a href="#" style="text-decoration: none;color: white;">à Tunis.lafayette <span><i class="bi bi-geo-alt"></i></span></a></div>  
+           </div>
+        </span>
+        <span id="d"  style="width: 239px;display: inline-block;height: 190px;margin-right: 40px;">
+        
+          <div id="contentd" style="width: 80%;position: relative;left: 0px;top: 87px;font-size: 16px;font-family: 'Source Serif Pro';">
+            <div  style="text-align: center;text-decoration: none;color: white;">Suiver-nous sue :</div>
+            <div  style="text-align: center;margin-top: 5px;font-family: monospace;">     
+          <a href="#" style="text-decoration: none;color: white;"><img src="Facebook.png" alt=""></a>
+          <a href="#" style="text-decoration: none;color: white;"><img src="Instagram.png" alt=""></a>
+          <a href="#" style="text-decoration: none;color: white;"><img src="Twitter.png" alt=""></a>
+          <a href="#" style="text-decoration: none;color: white;"><img src="WhatsApp.png" alt=""></a>
+      
+            </div>
+           </div>
+        </span>
+      </div>
+      </div>
+      <div><p style="background: #407f5c;text-align: center;text-transform: uppercase;color: white;font-style: normal;font-family: auto;font-size: 24px;">Tous droits réservés 2022</p></div>
+      
+
+    <script src="vtt.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
